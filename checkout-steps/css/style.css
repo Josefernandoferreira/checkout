@@ -12,6 +12,9 @@
   width: 7rem;
 }
 
+.mg-top-1{
+  margin: 1rem 0;
+}
 .mg-1 {
   margin: 1rem;
 }
@@ -30,6 +33,10 @@
 
 .text-left {
   text-align: left;
+}
+
+.mg-right-0-5 {
+  margin-right: 0.5rem;
 }
 
 .mg-right-1 {
@@ -63,6 +70,7 @@
 .text-buy {
   font-size: 11px;
   color: #707780;
+  text-align: end;
 }
 
 .text-left-buy {
@@ -81,6 +89,13 @@
 
 .some-page-wrapper {
   margin: 0px;
+}
+
+.d-flex-center-imgs{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 * {
@@ -339,9 +354,10 @@ p {
 }
 
 .list-this-course {
-  padding: 0.8rem 0;
+  padding: 0rem 0;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 14px;
+  margin-left: 1rem;
 }
 
 footer ul {
@@ -652,6 +668,9 @@ hr {
   .tab button {
     font-size: 9.5px
   }
+  #selos{
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {
@@ -666,4 +685,29 @@ hr {
 
 .margin-top-2{
   margin-top: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-left {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.flex-right {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
