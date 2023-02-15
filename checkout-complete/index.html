@@ -4,283 +4,277 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/custom.js"></script>
+        <!-- <script type="text/javascript" src="js/custom.js"></script> -->
         <link href='https://css.gg/arrow-left.css' rel='stylesheet'>
     </head>
 
     <body>
         <section id="timer">
-            <div class="row fixed-top d-inline-flex justify-content-center align-items-center oferta">
-                <div class="timer text-center">00:00:00</div>
+            <div class="t-container">
+                <div class="t-clock">00 : 00 : 00</div>
+                <div class="t-div">
+                    <p class="incon-t-clock"></p>
+                    <p class="t-text">Contagem zerada</p>
+                </div>
             </div>
         </section>
 
         <section id="checkout">
-            <div class="d-flex-column">
-                <div class="container investimento">
-                    <div class="investimento-left">
-                        <h1>Seu carrinho de investimento</h1>
-                    </div>             
-                    <div class="investimento-right">
-                        logo aqui
+            <div class="container">   
+                <div class="parent">
+                    <div class="div1">
+                        <p class="div1-text">
+                            O que você precisa saber para iniciar o curso:
+                        </p>
                     </div>
-                </div>
-      
-                <div class="container justify-content-center">   
-                    <div class="parent">
-                        <div class="div1 row2"> 
-                            <div class="div-1 mg-1">
-                                <div class="col-sm ">
-                                    <img class ="w-img-10 d-flex-left" src="img/img.png">
-                                </div>
-                                <div class="col-md subtitle">
-                                    <h1 class="mg-0 title-course">Pericia Judicial</h1>   
-                                    <div class="">
-                                        <p class="">
-                                            Autor: Curso Beta   <br>
-                                            <strong>7 dias</strong> 
-                                            de Garantia
-                                        </p>   
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="mg-1">
-                                <div class="row justify-content-center">
-                                    <h5 class="the-best-couse text-center"> O melhor curso de Perícia do Brasil</h5>
-                                </div>
-                                <div class="row">
-                                    <h3 class="this-couse-include text-center"> Este curso inclui:</h3>
-                                </div>  
-                                <ul id="list-this-course" class="text-left">
-                                    <li>50 Aulas</li>
-                                    <li>40 horas de curso</li>
-                                    <li>74.986 alunos</li>
-                                    <li>Certificado Digital</li>
-                                    <li>152 Arquivos para download</li>
-                                </ul>
-                            </div>
 
-                            <div class="mg-1">
-                                <div class="row">
-                                    <h3 class="this-couse-include text-center"> O que você precisa saber para inciar o curso:</h3>
-                                </div>  
-                                <div class="text-left">
-                                    <div class="list-this-course">
-                                        <h4 >Acesso via E-mail</h4>
-                                        <p>Acesso ao produto liberoa via e-mail <br> Rápido e descomplicado</p>
-                                    </div>
-                                    <div class="list-this-course">
-                                        <h4>Compra segura</h4>
-                                        <p>Ambiente seguro e autenticado</p>
-                                    </div>
-                                    <div class="list-this-course">
-                                        <h4>Conteúdo completo</h4>
-                                        <p>100% revisado e aprovado</p>
-                                    </div>
+                    <div class="div2">
+                        <div class="curso">
+                            <div class="info-curso">
+                                <div class="icon-info"></div>
+                                <div class="info-description">
+                                    <p class="info-title">Acesso via E-mail</p>
+                                    <p class="info-text">Acesso ao produto liberado via e-mail. Rápido e descomplicado
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="info-curso">
+                                <div class="icon-info"></div>
+                                <div class="info-description">
+                                    <p class="info-title">Compra segura
+                                    </p>
+                                    <p class="info-text">Ambiente seguro e autenticado</p>  
+                                </div>
+                            </div>
+                            <div class="info-curso">
+                                <div class="icon-info"></div>
+                                <div class="info-description">
+                                    <p class="info-title">Conteúdo Aprovado</p>
+                                    <p class="info-text">100% revisado e aprovado</p>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="div3">                 
+                        <div id="main-course">
+                            <div class="img-course">
+                                <img class ="imagem" src="img/img.png">
+                            </div>
+                            <div class="content-course">
+                                <h2 class="course-title">Curso de Pericia Judicial</h2>   
+                                <p class="course-text">
+                                    Autor: Curso Beta 
+                                </p>   
+                                <p class="course-price">
+                                    12x de R$79,70
+                                </p> 
                             </div>
                         </div>
 
-                        <div class="div2">                 
-                            <div id="img-step-one"class="row">
-                                <div class="col-sm ">
-                                    <img class ="w-img-7 d-flex-left" src="img/img.png">
+                        <div id="dados-pessoais">
+                            <form>
+                                <div id="step-one">
+                                    <div class="field-input">
+                                        <label class="label" for="nome">Nome completo</label>
+                                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                                    </div>
+                                    <div class="field-input">
+                                        <label class="label"for="email">Seu email</label>
+                                        <input type="text" id="email" name="lastname" placeholder="Digite seu email para receber a compra">
+                                    </div>
+                                    <div class="field-input mb-1">
+                                        <label class="label" for="celular">Celular</label>
+                                        <input type="text" id="celular" name="celular" placeholder="Digite o número do seu celular">
+                                    </div>
+                                    <br>
                                 </div>
-                                <div class="col-md subtitle">
-                                    <h2 class="mg-0 title-course">Pacote de <br> Pericia Judicial</h2>   
-                                    <div class="">
-                                        <p class="">
-                                            Autor: Curso Beta 
-                                        </p>   
-                                        <p class="">
-                                            <strong class="parcel">12x de R$</strong>  
-                                            <strong class="price">79,70</strong>
-                                        </p>   
-                                    </div> 
+                            </form>
+                        </div>
+
+                        <div id="pagamento">
+                            <form>
+                                <div class="row-pagamento">
+                                    <div id="options" class="field-input d-flex">
+                                        <input type="radio" id="credito" name="pagamento" value="1">
+                                        <label for="credito">Cartão de cŕedito</label>
+                                        <input type="radio" id="boleto" name="pagamento" value="2">
+                                        <label for="boleto">Boleto</label>
+
+                                        <input type="radio" id="pix" name="pagamento" value="3">
+                                        <label for="pix">PIX</label>
+
+                                        <input type="radio" id="vermais" name="pagamento" value="4">
+                                        <label for="vermais">Ver mais</label>
+                                    </div>
+                                    <div>
+                                        <p></p>
+                                    </div>
                                 </div>
+                                    <div class="forma-pagamento">
+                                        <div class="column-pagamento">
+                                            <div class="input-pagamento">
+                                                <div class="field-input">
+                                                    <label class="label" for="numero">Número do Cartão</label>
+                                                    <input type="text" id="numero" name="numero" placeholder="Digite somente números">
+                                                </div>
+
+                                                <div class="field-input">
+                                                    <label class="label"for="titular">Nome do titular</label>
+                                                    <input type="text" id="titular" name="titular" placeholder="Digite o nome impresso no cartão">
+                                                </div>
+
+                                                <div class="field-input">
+                                                    <label class="label" for="cpf">CPF/CNPJ (Titular do cartão)</label>
+                                                    <input type="text" id="cpf" name="cpf" placeholder="Digite o número do seu CPF ou CNPJ">
+                                                </div>
+
+                                                <div class="infos-cartao">
+                                                    <div class="field-input">
+                                                        <label class="label" for="mes">Mẽs</label>
+                                                        <input type="text" id="mes" name="mes" placeholder="Mês">
+                                                    </div>
+
+                                                    <div class="field-input">
+                                                        <label class="label" for="ano">Ano</label>
+                                                        <input type="text" id="ano" name="ano" placeholder="Ano">
+                                                    </div>
+
+                                                    <div class="field-input">
+                                                        <label class="label" for="cvv">CVV</label>
+                                                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cartao">
+                                                <div class="img-cartao"></div>
+                                                <div class="tipos-cartoes">
+                                                    <p>teste</p>
+                                                    <p>teste</p>
+                                                    <p>teste</p>
+                                                    <p>teste</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="field-input parcelas">
+                                            <label class="label" for="telefone">Selecione o número de parcelas</label>
+                                            <select id="country" name="country">
+                                                <option value="option1">12x de R$79,70*</option>
+                                                <option value="option2">12x de R$79,70*</option>
+                                                <option value="option3">12x de R$79,70*</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
+
+                        <div class="details-compras">Detalhes da compra</div>
+                        <div class="price-final">
+                            <p class="price-text">Perícia Judicial</p>
+                            <div class="prive-valor">12x de R$ 59,70*</div>
+                        </div>
+                        <button class="button c-pointer" type="submit" value="Comprar Agora"> COMPRAR AGORA
+                        </button>
+                    </div> 
+
+                    <div class="div4"> 
+                        <div class="course-resource">
+                            <div class="resource-title">
+                                <span></span>
+                                <h2 class="cr-title">Resumo do curso</h2>
+                            </div>
+                            <div class="resource">
+                                <p class="ul-cr-title">Curso de Perícia Judicial:</p>
+                                <ul>
+                                    <li class="li-resource">
+                                        Formação completa de Peritos Judiciais com certificado válido para todos os tribunais do país
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class="resource">
+                                <p class="ul-cr-title">+ 5 Bônus</p>
+                                <ul>
+                                    <li class="li-resource">
+                                        Curso de AssistenteTécnico Judicial
+                                    </li>
+                                    <li class="li-resource">
+                                        Passo a passo da Perícia Judicial
+                                    </li>
+                                    <li class="li-resource">
+                                        Pacote de laudos e petições
+                                    </li>
+                                    <li class="li-resource">
+                                        Tutoria especializada
+                                    </li>
+                                    <li class="li-resource">
+                                        Grupo VIP para Peritos Judiciais
+                                    </li>
+                                </ul>
                             </div>
 
-                            <div class="form-checkout">
-                                <div class="tab mb-4">
-                                    <button id="bt-step-one" class="tablinks text-center active" onclick="openCity(event, 'step-one')"> 
-                                        <strong id="step"> 1 </strong>
-                                         <span class="">Dados pessoais</span>
-                                        <i class="arrow right"></i>
-                                    </button>
+                            <div>
+                                <span></span>
+                                <h2 class="aprender">O que você vai aprender?</h2>
+                            </div>
 
-                                    <button id="bt-step-two" class="tablinks text-center" onclick="openCity(event, 'step-two')">
-                                        <strong id="step"> 2 </strong> Pagamento
-                                        <i class="arrow right"></i>
-                                    </button>
-
-                                    <button id="bt-step-three" class="tablinks text-center" onclick="openCity(event, 'step-three')">
-                                        <strong id="step"> 3</strong>  Finalização
-                                        <i class="arrow right"></i>
-                                    </button>
+                            <div class="aprendizados">
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Uma nova forma de aplicar os conhecimentos da sua formação
+                                    </p>
                                 </div>
-
-                                <div id="dados-pessoais">
-                                    <form>
-                                        <div id="step-one" class="tabcontent">
-                                            <div class="field-input mb-1">
-                                                <label class="label" for="nome">Nome completo</label>
-                                                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
-                                            </div>
-                                            <div class="field-input mb-1">
-                                                <label class="label"for="">Seu email</label>
-                                                <input type="text" id="email" name="lastname" placeholder="Digite seu email para receber a compra">
-                                            </div>
-                                            <div class="field-input mb-1">
-                                                <label class="label" for="celular">Celular</label>
-                                                <input type="text" id="celular" name="celular" placeholder="Digite o número do seu celular">
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <strong class="text-step-1"> Seus dados serão mantidos em sigilo </strong>
-                                            </div>
-                                            <br>
-                                            <button class="button c-pointer" type="submit" value="Comprar Agora"> Comprar Agora</button>
-                                        </div>
-                                    </form>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Trabalhar para a Justiça na área em que você estudou para atuar</p>
                                 </div>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Toda a teoria e prática da Perícia Judicial</p>
+                                </div>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Elaborar laudos claros e eficientes que ajudem o juiz a avaliar o caso
+                                    </p>
+                                </div>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>O funcionamento do Judiciário e como o perito se encaixa nele</p>
+                                </div>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Como definir os honorários das suas Perícias</p>
+                                </div>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Os critérios e princípios para exercer a Perícia de forma ética e eficiente
+                                    </p>
+                                </div>
+                                <div class="item-aprendizados">
+                                    <span></span>
+                                    <p>Ganhar uma renda extra de R$1.200 a R$12.000 em média, trabalhando de casa e com horário flexível
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="learn">
 
-                                <div id="pagamento">
-                                    <form>
-                                        <div id="step-two" class="tabcontent">
-                                            <div class="d-flex c-pointer">
-                                                <div class ="row d-block">
-                                                    <div class="col-md">
-                                                        <div class="arrow-back">
-                                                            <i class="gg-arrow-left"></i>
-                                                        </div> 
-                                                        <div class="text-back">
-                                                            <p class="d-flex">Voltar</p>
-                                                        </div> 
-                                                    </div> 
-                                                    <div class="col-md f-right text-left-buy">        
-                                                        <div class="text-buy">
-                                                            <p> Detalhes da compra</p>
-                                                            <strong> 12x de R$ 79,70* </strong>
-                                                            <p> ou R$ 797,00 à vista</p>
-                                                        </div> 
-                                                    </div> 
-                                                </div>
-                                            </div>
-
-                                            <div class="row-pagamento">
-                                                <div id="options" class="field-input d-flex">
-                                                    <input type="radio" id="credito" name="pagamento" value="1">
-                                                    <label for="credito">Cartão de cŕedito</label>
-                                                    <input type="radio" id="boleto" name="pagamento" value="2">
-                                                    <label for="boleto">Boleto</label>
-
-                                                    <input type="radio" id="pix" name="pagamento" value="3">
-                                                    <label for="pix">PIX</label>
-
-                                                    <input type="radio" id="vermais" name="pagamento" value="4">
-                                                    <label for="vermais">Ver mais</label>
-                                                </div>
-                                                <div>
-                                                    <p></p>
-                                                </div>
-                                            </div>
-
-                            
-                                            <div class="field-input mb-1">
-                                                <label class="label" for="numero">Número do Cartão</label>
-                                                <input type="text" id="numero" name="numero" placeholder="Digite somente números">
-                                            </div>
-
-                                            <div class="field-input mb-1">
-                                                <label class="label"for="titular">Nome do titular</label>
-                                                <input type="text" id="titular" name="titular" placeholder="Digite o nome impresso no cartão">
-                                            </div>
-
-                                            <div class="field-input mb-1">
-                                                <label class="label" for="cpf">CPF/CNPJ (Titular do cartão)</label>
-                                                <input type="text" id="cpf" name="cpf" placeholder="Digite o número do seu CPF ou CNPJ">
-                                            </div>
-
-                                            <div class="field-input mb-1 d-flex">
-                                                <div class="field-input mb-1 d-flex fields-step-2">
-                                                    <label class="label" for="mes">Mẽs</label>
-                                                    <input type="text" id="mes" name="mes" placeholder="Mês">
-                                                </div>
-                                        
-                                                <div class="field-input mb-1 fields-step-2">
-                                                    <label class="label" for="ano">Ano</label>
-                                                    <input type="text" id="ano" name="ano" placeholder="Ano">
-                                                </div>
-                                        
-                                                <div class="field-input mb-1 fields-step-2">
-                                                    <label class="label" for="cvv">CVV</label>
-                                                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
-                                                </div>
-                                            </div>
-
-                                            <div class="field-input mb-1">
-                                                <label class="label" for="telefone">Selecione o número de parcelas</label>
-                                                <select id="country" name="country">
-                                                    <option value="option1">12x de R$79,70*</option>
-                                                    <option value="option2">12x de R$79,70*</option>
-                                                    <option value="option3">12x de R$79,70*</option>
-                                                </select>
-                                            </div>
-                                            <br>
-                                            <button class="button c-pointer" type="submit" value="Comprar Agora"> Finalizar pagamento</button>
-                                        </div>
-                                    </form>
-                                </div> 
-
-                                <div id="finalizacao">
-                                    <form>
-                                        <div id="step-three" class="tabcontent">
-                                            <p class="mb-1">Detalhes da compra</p>
-                                            <div class="row">
-                                                <div class="col-sm ">
-                                                    <img class ="w-img-12 d-flex-left" src="img/img.png">
-                                                </div>
-                                                <div class="col-md subtitle">
-                                                    <h2 class="mg-0 title-course">Pacote de <br> Pericia Judicial</h2>   
-                                                    <div class="">
-                                                        <p class="">
-                                                            Autor: Curso Beta 
-                                                        </p>   
-                                                        <p class="">
-                                                            <strong class="parcel">12x de R$</strong>  
-                                                            <strong class="price">79,70</strong>
-                                                        </p>   
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <p class="mb-1">Pgamento via cartão de crédito</p> <br>
-
-                                            <div class="notice">
-                                                <p> Depois do Pagamento, fique atento ao seu e-mail para receber os dados de 
-                                                    acesso ao produto (Verifique também a caixa de SPAM)
-                                                </p> 
-                                            </div>
-                                            <br>
-                                            <button class="button bt-blue c-pointer" type="submit" value="Comprar Agora"> Seu pedido foi processado com sucesso</button>
-                                        </div>
-                                    </form>
-                                </div> 
-                            </div> 
-                        </div> 
+                        </div>
                     </div>
-                    <footer class="row row2">
-                        <ul id="footer" class="text-left">
-                            <li>
-                                    <p class="f-title">Satisfação garantida ou o seu dinheiro de volta</p>
-                                <p class="f-descricao">Garantia incondicional em até 7 dias você efetuar o <br> cancelamento e nós devolvemos 100% do valor pago.</p>
-                            </li>
-                            <li>
-                                <p class="f-title">Precisa de ajuda?</p>
-                                <p class="f-descricao">Vale com a gente via WhatsApp ou e-mail.<br> Nosso site utiliza cookies. Para saber mais, confira a nossa política de privacidade e ostermos de compra.</p>
-                            </li>
-                        </ul>
-                    </footer>
+
                 </div>
+                <footer id="footer">
+                        <ul class="text-left">
+                        <li class="footer-text">
+                            <p class="f-title">Satisfação garantida ou o seu dinheiro de volta</p>
+                            <p class="f-descricao">Garantia incondicional em até 7 dias você efetuar o <br> cancelamento e nós devolvemos 100% do valor pago.</p>
+                        </li>
+                        <li class="footer-text">
+                            <p class="f-title">Precisa de ajuda?</p>
+                            <p class="f-descricao">Vale com a gente via WhatsApp ou e-mail.<br> Nosso site utiliza cookies. Para saber mais, confira a nossa política de privacidade e ostermos de compra.</p>
+                        </li>           
+                        </ul>
+                </footer>
             </div>
         </section>
     <body>
