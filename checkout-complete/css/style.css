@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-size: 14px;
 }
@@ -109,9 +109,9 @@
   grid-template-rows: 50px auto 2fr;
   gap: 15px 26px;
   grid-template-areas:
-      "div1 div3"
-      "div2 div3"
-      "div4 div3";
+    "div1 div3"
+    "div2 div3"
+    "div4 div3";
 }
 
 .div1 {
@@ -151,7 +151,7 @@
 
 .div2 .icon-info {
   background-color: transparent;
-  overflow-x: hidden!important;
+  overflow-x: hidden !important;
 }
 
 .info-description {
@@ -387,7 +387,6 @@
 }
 
 .li-resource {
-  list-style: circle;
   padding: 5px;
 }
 
@@ -447,14 +446,13 @@ footer {
   font-size: 14px;
 }
 
-.row-footer{
+.row-footer {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-evenly;
 }
-
 
 .f-descricao {
   font-weight: 300;
@@ -494,7 +492,7 @@ footer {
 
   .div1-text {
     font-size: 11px;
-  } 
+  }
 
   .div2 {
     margin: 0 40px;
@@ -512,6 +510,11 @@ footer {
   .t-div {
     display: none;
   }
+
+  footer {
+    width: 90%;
+    margin: 4rem auto;
+  }
 }
 
 @media (max-width: 990px) {
@@ -520,6 +523,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .resource-title {
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    padding: 10px;
+  }
+
+  .aprender {
+    font-size: 17px;
+    padding: 15px 0;
+    margin: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
   }
 
   .infos-cartao {
@@ -560,7 +578,7 @@ footer {
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 500px) {
   .t-container,
   .t-div {
     gap: 12px;
@@ -579,13 +597,28 @@ footer {
     height: 27.17px;
   }
 
+  .div4 {
+    padding: 10px;
+  }
+
+  .resource {
+    padding: 10px 0;
+  }
+
+  .li-resource {
+    font-size: 10px;
+  }
+
+  .item-aprendizados {
+    min-width: 240px;
+  }
+
+  .ul-cr-title {
+    font-size: 11px;
+  }
+
   .row-footer {
     display: block;
     text-align: center;
-  }
-
-  footer {
-    width: 90%;
-    margin: 10 auto;
   }
 }
