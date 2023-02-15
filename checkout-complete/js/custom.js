@@ -15,39 +15,46 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
+$(document).ready(function() {
 
-$('#credito').on('change', function() {
-  if ($(this).is(':checked')) {
-    $('#form-credito').show();
-    $('#form-boleto').hide();
-    $('#form-pix').hide();
-    $('#form-outros').hide();
-  }
-});
-
-$('#boleto').on('change', function() {
-  if ($(this).is(':checked')) {
-    $('#form-boleto').show();
-    $('#form-credito').hide();
-    $('#form-pix').hide();
-    $('#form-outros').hide();
-  }
-});
-
-$('#pix').on('change', function() {
-  if ($(this).is(':checked')) {
-    $('#form-pix').show();
-    $('#form-boleto').hide();
-    $('#form-credito').hide();
-    $('#form-outros').hide();
-  }
-});
-
-$('#vermais').on('change', function() {
-  if ($(this).is(':checked')) {
-    $('#form-outros').show();
-    $('#form-boleto').hide();
-    $('#form-pix').hide();
-    $('#form-credito').hide();
-  }
+  $('#form-credito').show();
+  $('#form-boleto').hide();
+  $('#form-pix').hide();
+  $('#form-outros').hide();
+  
+  $('#credito').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('#form-credito').show();
+      $('#form-boleto').hide();
+      $('#form-pix').hide();
+      $('#form-outros').hide();
+    }
+  });
+  
+  $('#boleto').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('#form-boleto').show();
+      $('#form-credito').hide();
+      $('#form-pix').hide();
+      $('#form-outros').hide();
+    }
+  });
+  
+  $('#pix').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('#form-pix').show();
+      $('#form-boleto').hide();
+      $('#form-credito').hide();
+      $('#form-outros').hide();
+    }
+  });
+  
+  $('#vermais').on('change', function() {
+    if ($(this).is(':checked')) {
+      $('#form-outros').show();
+      $('#form-boleto').hide();
+      $('#form-pix').hide();
+      $('#form-credito').hide();
+    }
+  });
 });

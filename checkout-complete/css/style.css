@@ -145,13 +145,16 @@
 .info-curso {
   display: flex;
   column-gap: 15px;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 15px;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .div2 .icon-info {
   background-color: transparent;
-  overflow-x: hidden !important;
 }
 
 .info-description {
@@ -176,7 +179,7 @@
   height: fit-content;
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   height: auto;
 }
 
@@ -218,9 +221,9 @@
 }
 
 .input-pagamento {
-  width: 60%;
   display: flex;
   flex-direction: column;
+  margin: 0 1rem;
 }
 
 .infos-cartao {
@@ -263,10 +266,11 @@
 
 .tipos-cartoes p {
   margin-top: 15px;
-  background-color: black;
   width: 45px;
   height: 45px;
-  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #options {
@@ -444,6 +448,7 @@ footer {
   margin: 2rem 0;
   font-weight: bold;
   font-size: 14px;
+  
 }
 
 .row-footer {
@@ -464,7 +469,7 @@ footer {
 .f-title {
   flex-grow: 1;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   color: #ff7e06;
 }
@@ -512,8 +517,7 @@ footer {
   }
 
   footer {
-    width: 90%;
-    margin: 4rem auto;
+    margin: 4rem 3rem;
   }
 }
 
@@ -578,7 +582,23 @@ footer {
   }
 }
 
+#selos-mobile {
+  display: none;
+}
+
 @media (max-width: 500px) {
+  #selos-mobile {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+  }
+
+  #selos{
+    display: none;
+  }
+
   .t-container,
   .t-div {
     gap: 12px;
@@ -606,7 +626,7 @@ footer {
   }
 
   .li-resource {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .item-aprendizados {
