@@ -22,7 +22,7 @@
                         <h1>Seu carrinho de investimento</h1>
                     </div>             
                     <div class="investimento-right">
-                        logo aqui
+                        <img src="img/logo-beta.png">
                     </div>
                 </div>
       
@@ -50,14 +50,32 @@
                                 </div>
                                 <div class="row">
                                     <h3 class="this-couse-include text-center"> Este curso inclui:</h3>
-                                </div>  
-                                <ul id="list-this-course" class="text-left">
-                                    <li>50 Aulas</li>
-                                    <li>40 horas de curso</li>
-                                    <li>74.986 alunos</li>
-                                    <li>Certificado Digital</li>
-                                    <li>152 Arquivos para download</li>
-                                </ul>
+                                </div> 
+                            
+                                <div class="list-this-course">
+                                    <div class="flex-container text-left">
+                                        <div class="flex-left">
+                                            <img class="mg-right-0-5" src="img/icons/icon-aulas.png">50 Aulas
+                                        </div>
+                                        <div class="flex-right">
+                                            <img class="mg-right-0-5" src="img/icons/icon-horas.png">40 horas de curso
+                                        </div>
+                                    </div>
+                                    <div class="flex-container text-left">
+                                        <div class="flex-left">
+                                            <img class="mg-right-0-5" src="img/icons/icon-alunos.png">74.986 alunos
+                                        </div>
+                                        <div class="flex-right">
+                                            <img class="mg-right-0-5" src="img/icons/icon-certificado.png">Certificado Final
+                                        </div>
+                                    </div>
+                                    <div class="flex-container text-left">
+                                        <div class="flex-left">
+                                            <img class="mg-right-0-5" src="img/icons/icon-download.png">152 Arquivos para download
+                                        </div>
+                                        <div class="flex-right"></div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="mg-1">
@@ -65,17 +83,35 @@
                                     <h3 class="this-couse-include text-center"> O que você precisa saber para inciar o curso:</h3>
                                 </div>  
                                 <div class="text-left">
-                                    <div class="list-this-course">
-                                        <h4 >Acesso via E-mail</h4>
-                                        <p>Acesso ao produto liberoa via e-mail <br> Rápido e descomplicado</p>
+
+                                    <div class="d-flex-center mb-1">
+                                        <div>
+                                            <img class="" src="img/icons/icon-email.png">
+                                        </div>
+                                        <div class="list-this-course">
+                                            <h4 >Acesso via E-mail</h4>
+                                            <p>Acesso ao produto liberoa via e-mail <br> Rápido e descomplicado</p>
+                                        </div>    
                                     </div>
-                                    <div class="list-this-course">
-                                        <h4>Compra segura</h4>
-                                        <p>Ambiente seguro e autenticado</p>
+
+                                    <div class="d-flex-center mb-1">
+                                        <div>
+                                            <img class="" src="img/icons/icon-comprasegura.png"><br>
+                                        </div>
+                                        <div class="list-this-course">
+                                            <h4>Compra segura</h4>
+                                            <p>Ambiente seguro e autenticado</p>
+                                        </div>
                                     </div>
-                                    <div class="list-this-course">
-                                        <h4>Conteúdo completo</h4>
-                                        <p>100% revisado e aprovado</p>
+
+                                    <div class="d-flex-center mb-1">
+                                        <div>
+                                            <img class="" src="img/icons/icon-conteudocompleto.png">
+                                        </div>
+                                        <div class="list-this-course">
+                                            <h4>Conteúdo completo</h4>
+                                            <p>100% revisado e aprovado</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -139,6 +175,10 @@
                                             </div>
                                             <br>
                                             <button class="button c-pointer" type="submit" value="Comprar Agora"> Comprar Agora</button>
+
+                                            <div id="selos" class="margin-top-2">
+                                                <img src="img/grupo-selos.png">
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -146,45 +186,35 @@
                                 <div id="pagamento">
                                     <form>
                                         <div id="step-two" class="tabcontent">
-                                            <div class="d-flex c-pointer">
-                                                <div class ="row d-block">
-                                                    <div class="col-md">
-                                                        <div class="arrow-back">
-                                                            <i class="gg-arrow-left"></i>
-                                                        </div> 
-                                                        <div class="text-back">
-                                                            <p class="d-flex">Voltar</p>
-                                                        </div> 
-                                                    </div> 
-                                                    <div class="col-md f-right text-left-buy">        
-                                                        <div class="text-buy">
-                                                            <p> Detalhes da compra</p>
-                                                            <strong> 12x de R$ 79,70* </strong>
-                                                            <p> ou R$ 797,00 à vista</p>
-                                                        </div> 
-                                                    </div> 
-                                                </div>
+                                            <div class="mg-top-1 c-pointer">   
+                                                <div class="arrow-back"> <i class="gg-arrow-left"></i> </div> 
+                                                <div class="text-back"><p class="d-flex">Voltar</p> </div> 
+                                                <div class="f-right text-buy">
+                                                    <p> Detalhes da compra</p>
+                                                    <strong> 12x de R$ 79,70* </strong>
+                                                    <p> ou R$ 797,00 à vista</p>
+                                                </div> 
                                             </div>
+                               
+                                                <div class="row row-pagamento">
+                                                    <div id="options" class="field-input d-flex">
+                                                        <input type="radio" id="credito" name="pagamento" value="1">
+                                                        <label for="credito">Cartão de cŕedito</label>
+                                                        <input type="radio" id="boleto" name="pagamento" value="2">
+                                                        <label for="boleto">Boleto</label>
 
-                                            <div class="row-pagamento">
-                                                <div id="options" class="field-input d-flex">
-                                                    <input type="radio" id="credito" name="pagamento" value="1">
-                                                    <label for="credito">Cartão de cŕedito</label>
-                                                    <input type="radio" id="boleto" name="pagamento" value="2">
-                                                    <label for="boleto">Boleto</label>
+                                                        <input type="radio" id="pix" name="pagamento" value="3">
+                                                        <label for="pix">PIX</label>
 
-                                                    <input type="radio" id="pix" name="pagamento" value="3">
-                                                    <label for="pix">PIX</label>
-
-                                                    <input type="radio" id="vermais" name="pagamento" value="4">
-                                                    <label for="vermais">Ver mais</label>
+                                                        <input type="radio" id="vermais" name="pagamento" value="4">
+                                                        <label for="vermais">Ver mais</label>
+                                                    </div>
+                                                    <div>
+                                                        <p></p>
+                                                    </div>
                                                 </div>
-                                                <div>
-                                                    <p></p>
-                                                </div>
-                                            </div>
+                                
 
-                            
                                             <div class="field-input mb-1">
                                                 <label class="label" for="numero">Número do Cartão</label>
                                                 <input type="text" id="numero" name="numero" placeholder="Digite somente números">
@@ -227,6 +257,9 @@
                                             </div>
                                             <br>
                                             <button class="button c-pointer" type="submit" value="Comprar Agora"> Finalizar pagamento</button>
+                                            <div id="selos" class="margin-top-2">
+                                                <img src="img/grupo-selos.png">
+                                            </div>
                                         </div>
                                     </form>
                                 </div> 
@@ -234,7 +267,7 @@
                                 <div id="finalizacao">
                                     <form>
                                         <div id="step-three" class="tabcontent">
-                                            <p class="mb-1">Detalhes da compra</p>
+                                            <p class="text-step-three  mb-1">Detalhes da compra</p>
                                             <div class="row">
                                                 <div class="col-sm ">
                                                     <img class ="w-img-12 d-flex-left" src="img/img.png">
@@ -253,7 +286,7 @@
                                                 </div>
                                             </div>
                                             <hr>
-                                            <p class="mb-1">Pgamento via cartão de crédito</p> <br>
+                                            <p class="text-step-three mb-1">Pagamento via cartão de crédito</p> <br>
 
                                             <div class="notice">
                                                 <p> Depois do Pagamento, fique atento ao seu e-mail para receber os dados de 
@@ -262,6 +295,9 @@
                                             </div>
                                             <br>
                                             <button class="button bt-blue c-pointer" type="submit" value="Comprar Agora"> Seu pedido foi processado com sucesso</button>
+                                            <div id="selos" class="margin-top-2">
+                                                <img src="img/grupo-selos.png">
+                                            </div>
                                         </div>
                                     </form>
                                 </div> 
