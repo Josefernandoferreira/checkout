@@ -13,16 +13,41 @@ function openCity(evt, cityName) {
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-  showImgStepOne();
 }
 
-function showImgStepOne() {
-  const btStepOne = document.getElementById("bt-step-one");
-  const imgStepOne = document.getElementById("img-step-one");
 
-  if (btStepOne.classList.contains("active")) {
-    imgStepOne.style.display = "flex";
-  } else {
-    imgStepOne.style.display = "none";
+$('#credito').on('change', function() {
+  if ($(this).is(':checked')) {
+    $('#form-credito').show();
+    $('#form-boleto').hide();
+    $('#form-pix').hide();
+    $('#form-outros').hide();
   }
-}
+});
+
+$('#boleto').on('change', function() {
+  if ($(this).is(':checked')) {
+    $('#form-boleto').show();
+    $('#form-credito').hide();
+    $('#form-pix').hide();
+    $('#form-outros').hide();
+  }
+});
+
+$('#pix').on('change', function() {
+  if ($(this).is(':checked')) {
+    $('#form-pix').show();
+    $('#form-boleto').hide();
+    $('#form-credito').hide();
+    $('#form-outros').hide();
+  }
+});
+
+$('#vermais').on('change', function() {
+  if ($(this).is(':checked')) {
+    $('#form-outros').show();
+    $('#form-boleto').hide();
+    $('#form-pix').hide();
+    $('#form-credito').hide();
+  }
+});

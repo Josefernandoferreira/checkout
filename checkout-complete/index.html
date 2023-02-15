@@ -2,9 +2,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css">
-        <!-- <script type="text/javascript" src="js/custom.js"></script> -->
+        <script type="text/javascript" src="js/custom.js"></script>
         <link href='https://css.gg/arrow-left.css' rel='stylesheet'>
     </head>
 
@@ -13,13 +14,16 @@
             <div class="t-container">
                 <div class="t-clock">00 : 00 : 00</div>
                 <div class="t-div">
-                    <p class="incon-t-clock"></p>
+                    <p class="incon-t-clock">
+                        <img src="img/clock.png"></span>
+                    </p>
                     <p class="t-text">Contagem zerada</p>
                 </div>
             </div>
         </section>
 
         <section id="checkout">
+            <div class="d-flex-column">
             <div class="container">   
                 <div class="parent">
                     <div class="div1">
@@ -31,7 +35,9 @@
                     <div class="div2">
                         <div class="curso">
                             <div class="info-curso">
-                                <div class="icon-info"></div>
+                                <div class="icon-info">
+                                    <span><img src="img/icons/icon-mail-void.png"></span>
+                                </div>
                                 <div class="info-description">
                                     <p class="info-title">Acesso via E-mail</p>
                                     <p class="info-text">Acesso ao produto liberado via e-mail. Rápido e descomplicado
@@ -39,7 +45,9 @@
                                 </div>
                             </div>
                             <div class="info-curso">
-                                <div class="icon-info"></div>
+                                <div class="icon-info">
+                                    <span><img src="img/icons/icon-segura-void.png"></span>
+                                </div>                                
                                 <div class="info-description">
                                     <p class="info-title">Compra segura
                                     </p>
@@ -47,7 +55,9 @@
                                 </div>
                             </div>
                             <div class="info-curso">
-                                <div class="icon-info"></div>
+                                <div class="icon-info">
+                                    <span><img src="img/icons/icon-check-void.png"></span>
+                                </div>                                
                                 <div class="info-description">
                                     <p class="info-title">Conteúdo Aprovado</p>
                                     <p class="info-text">100% revisado e aprovado</p>
@@ -98,6 +108,7 @@
                                     <div id="options" class="field-input d-flex">
                                         <input type="radio" id="credito" name="pagamento" value="1">
                                         <label for="credito">Cartão de cŕedito</label>
+
                                         <input type="radio" id="boleto" name="pagamento" value="2">
                                         <label for="boleto">Boleto</label>
 
@@ -111,7 +122,7 @@
                                         <p></p>
                                     </div>
                                 </div>
-                                    <div class="forma-pagamento">
+                                    <div id="form-credito" class="forma-pagamento">
                                         <div class="column-pagamento">
                                             <div class="input-pagamento">
                                                 <div class="field-input">
@@ -166,6 +177,40 @@
                                             </select>
                                         </div>
                                     </div>
+
+                                    <div id="form-boleto" class="forma-pagamento">
+                                        <div class="column-pagamento">
+                                            <div class="input-pagamento">
+                                                <div class="field-input">
+                                                    <label class="label" for="numero">Boleto</label>
+                                                    <input type="text" id="numero" name="numero" placeholder="Digite somente números">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="form-boleto" class="forma-pagamento">
+                                        <div class="column-pagamento">
+                                            <div class="input-pagamento">
+                                                <div class="field-input">
+                                                    <label class="label" for="numero">PIX</label>
+                                                    <input type="text" id="numero" name="numero" placeholder="Digite somente números">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="form-outros" class="forma-pagamento">
+                                        <div class="column-pagamento">
+                                            <div class="input-pagamento">
+                                                <div class="field-input">
+                                                    <label class="label" for="numero">Outros</label>
+                                                    <input type="text" id="numero" name="numero" placeholder="Digite somente números">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                             </form>
                         </div>
 
@@ -174,8 +219,12 @@
                             <p class="price-text">Perícia Judicial</p>
                             <div class="prive-valor">12x de R$ 59,70*</div>
                         </div>
-                        <button class="button c-pointer" type="submit" value="Comprar Agora"> COMPRAR AGORA
-                        </button>
+                        <button class="button c-pointer" type="submit" value="Comprar Agora">COMPRAR AGORA</button>
+                        <div id="selos" class="text-center">
+                            <img src="img/icons/compra.png">
+                            <img src="img/icons/privacidade.png">
+                            <img src="img/icons/garantia.png">
+                        </div>
                     </div> 
 
                     <div class="div4"> 
@@ -184,35 +233,38 @@
                                 <span></span>
                                 <h2 class="cr-title">Resumo do curso</h2>
                             </div>
-                            <div class="resource">
-                                <p class="ul-cr-title">Curso de Perícia Judicial:</p>
-                                <ul>
-                                    <li class="li-resource">
-                                        Formação completa de Peritos Judiciais com certificado válido para todos os tribunais do país
+                            <div class="teste">
+                                <div class="resource">
+                                    <p class="ul-cr-title">Curso de Perícia Judicial:</p>
+                                    <ul>
+                                        <li class="li-resource">
+                                            Formação completa de Peritos Judiciais <br> 
+                                            com certificado válido para todos os   <br>
+                                            tribunais do país
                                         </li>
-                                </ul>
+                                    </ul>
+                                </div>
+                                <div class="resource">
+                                    <p class="ul-cr-title">+ 5 Bônus</p>
+                                    <ul>
+                                        <li class="li-resource">
+                                            Curso de AssistenteTécnico Judicial
+                                        </li>
+                                        <li class="li-resource">
+                                            Passo a passo da Perícia Judicial
+                                        </li>
+                                        <li class="li-resource">
+                                            Pacote de laudos e petições
+                                        </li>
+                                        <li class="li-resource">
+                                            Tutoria especializada
+                                        </li>
+                                        <li class="li-resource">
+                                            Grupo VIP para Peritos Judiciais
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="resource">
-                                <p class="ul-cr-title">+ 5 Bônus</p>
-                                <ul>
-                                    <li class="li-resource">
-                                        Curso de AssistenteTécnico Judicial
-                                    </li>
-                                    <li class="li-resource">
-                                        Passo a passo da Perícia Judicial
-                                    </li>
-                                    <li class="li-resource">
-                                        Pacote de laudos e petições
-                                    </li>
-                                    <li class="li-resource">
-                                        Tutoria especializada
-                                    </li>
-                                    <li class="li-resource">
-                                        Grupo VIP para Peritos Judiciais
-                                    </li>
-                                </ul>
-                            </div>
-
                             <div>
                                 <span></span>
                                 <h2 class="aprender">O que você vai aprender?</h2>
@@ -220,38 +272,38 @@
 
                             <div class="aprendizados">
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Uma nova forma de aplicar os conhecimentos da sua formação
                                     </p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Trabalhar para a Justiça na área em que você estudou para atuar</p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Toda a teoria e prática da Perícia Judicial</p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Elaborar laudos claros e eficientes que ajudem o juiz a avaliar o caso
                                     </p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>O funcionamento do Judiciário e como o perito se encaixa nele</p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Como definir os honorários das suas Perícias</p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Os critérios e princípios para exercer a Perícia de forma ética e eficiente
                                     </p>
                                 </div>
                                 <div class="item-aprendizados">
-                                    <span></span>
+                                    <span><img src="img/icons/icon-check.png"></span>
                                     <p>Ganhar uma renda extra de R$1.200 a R$12.000 em média, trabalhando de casa e com horário flexível
                                     </p>
                                 </div>
@@ -263,19 +315,32 @@
                     </div>
 
                 </div>
-                <footer id="footer">
-                        <ul class="text-left">
-                        <li class="footer-text">
-                            <p class="f-title">Satisfação garantida ou o seu dinheiro de volta</p>
-                            <p class="f-descricao">Garantia incondicional em até 7 dias você efetuar o <br> cancelamento e nós devolvemos 100% do valor pago.</p>
-                        </li>
-                        <li class="footer-text">
-                            <p class="f-title">Precisa de ajuda?</p>
-                            <p class="f-descricao">Vale com a gente via WhatsApp ou e-mail.<br> Nosso site utiliza cookies. Para saber mais, confira a nossa política de privacidade e ostermos de compra.</p>
-                        </li>           
-                        </ul>
+                <footer>
+                    <div id="footer" class="text-left">
+                        <div class="row-footer row2 ">
+                            <div class="md-col mb-1 mg-0-8">
+                                <p class="f-title">Satisfação garantida ou o seu dinheiro de volta</p>
+                                <p class="f-descricao">
+                                    Garantia incondicional em até 7 dias você efetuar o <br> 
+                                    cancelamento e nós devolvemos 100% do valor pago.
+                                </p>
+                            </div>
+                            <div class="md-col mb-1 mg-0-8">
+                                <p class="f-title">Precisa de ajuda?</p>
+                                <p class="f-descricao">
+                                    Vale com a gente via WhatsApp ou e-mail.<br> 
+                                    Nosso site utiliza cookies. Para saber mais, confira a nossa 
+                                    política de privacidade e ostermos de compra.
+                                </p>
+                            </div>
+                            <div class="md-col">
+                                <img src="img/reclameaqui.png">
+                            </div>
+                        </div>
+                    </div>
                 </footer>
             </div>
+        </div>
         </section>
     <body>
 </html> 

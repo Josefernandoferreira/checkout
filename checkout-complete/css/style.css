@@ -4,8 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+}
+
+.mg-0-8 {
+  margin: 0.8rem;
 }
 
 :root {
@@ -18,6 +23,16 @@
   height: 85px;
   background-color: #de9d02;
   position: fixed;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .t-container {
@@ -34,16 +49,41 @@
   gap: 22px;
 }
 
+#selos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
 .incon-t-clock {
-  width: 50px;
-  height: 40px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .t-clock {
   font-weight: 700;
   font-size: 41px;
   color: white;
+}
+
+.row-pagamento {
+  display: grid;
+}
+
+#pagamento #options input[type="radio"]:checked + label {
+  background-color: white;
+  color: #375ec1;
+  border: 1.6px solid #375ec1;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#pagamento #options input[type="radio"]:hover + label {
+  cursor: pointer;
 }
 
 .t-text {
@@ -67,17 +107,16 @@
   width: 100%;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 50px auto 2fr;
-  gap: 15px 32px;
+  gap: 15px 26px;
   grid-template-areas:
-    "div1 div3"
-    "div2 div3"
-    "div4 div3";
+      "div1 div3"
+      "div2 div3"
+      "div4 div3";
 }
 
 .div1 {
   grid-area: div1;
   height: 50px;
-  margin: 0 20px;
   border-radius: 10px;
   background-color: var(--primary-color);
 }
@@ -88,7 +127,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
   text-align: center;
   color: white;
@@ -111,9 +150,8 @@
 }
 
 .div2 .icon-info {
-  width: 22px;
-  height: 25px;
-  background-color: #1e1e1e;
+  background-color: transparent;
+  overflow-x: hidden!important;
 }
 
 .info-description {
@@ -139,6 +177,7 @@
   background-color: white;
   border-radius: 10px;
   padding: 10px;
+  height: auto;
 }
 
 #main-course {
@@ -199,7 +238,7 @@
 }
 
 .field-input label {
-  margin: 18px 0 14px 0;
+  margin: 18px 0 4px 0;
 }
 
 .field-input input {
@@ -236,6 +275,7 @@
   justify-content: space-between;
   column-gap: 22px;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 #options label {
@@ -313,7 +353,6 @@
   grid-area: div4;
   background-color: white;
   height: 100%;
-  margin: 0 10px;
   border-radius: 10px;
 }
 
@@ -325,6 +364,9 @@
 .resource {
   width: 100%;
   padding: 10px 20px;
+  justify-content: center;
+  align-items: flex-start;
+  display: grid;
 }
 
 .cr-title {
@@ -376,34 +418,43 @@
 
 .item-aprendizados span {
   display: flex;
-  width: 25px;
-  height: 20px;
-  background-color: black;
+  background-color: transparent;
 }
 
 .aprendizados p {
-  padding: 20px 0;
+  padding: 9px 0;
   font-weight: 400;
   width: 300px;
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-#footer {
-  overflow: hidden;
-  min-height: 95px;
-  max-height: auto;
-  border: 1px solid #ff7e06;
-  border-radius: 10px;
-  margin: 20px 10px 25px 10px;
+footer ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: none;
+  padding: 0;
 }
 
-#footer .text-left {
-  justify-content: center;
+footer {
+  color: ff7e06;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 1.6rem;
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.row-footer{
   display: flex;
-  margin-top: 20px;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
 
 .f-descricao {
   font-weight: 300;
@@ -436,13 +487,30 @@
       "div4";
   }
 
+  .div1 {
+    margin: 0 40px;
+    justify-content: center;
+  }
+
+  .div1-text {
+    font-size: 11px;
+  } 
+
   .div2 {
-    margin: 0 20px;
+    margin: 0 40px;
     justify-content: center;
   }
 
   .div3 {
-    margin: 0 10px;
+    margin: 0 20px;
+  }
+
+  .div4 {
+    margin: 2rem 3rem;
+  }
+
+  .t-div {
+    display: none;
   }
 }
 
@@ -511,8 +579,13 @@
     height: 27.17px;
   }
 
-  .div1 {
-    width: 300px;
-    margin: 0 auto;
+  .row-footer {
+    display: block;
+    text-align: center;
+  }
+
+  footer {
+    width: 90%;
+    margin: 10 auto;
   }
 }
