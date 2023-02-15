@@ -47,6 +47,10 @@
   margin-left: 2rem;
 }
 
+.mg-left-1 {
+  margin-left: 1rem;
+}
+
 .d-flex {
   display: flex;
 }
@@ -98,6 +102,12 @@
   justify-content: center;
 }
 
+.see-more{
+  font-size: 12px;
+  padding: 0.5rem;
+  display: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -120,9 +130,9 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
+  align-items: center;
 }
 
 .div-1 {
@@ -253,7 +263,7 @@ body {
   border: 1px solid #cccccc;
   border-radius: 0.3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .tab button {
@@ -372,9 +382,18 @@ footer {
   color: ff7e06;
   border: 1px solid;
   border-radius: 0.5rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
   margin: 2rem 0;
   font-weight: bold;
+  font-size: 14px;
+}
+
+.row-footer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .f-descricao {
@@ -567,9 +586,56 @@ hr {
   display: grid;
 }
 
+.margin-top-2{
+  margin-top: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-left {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.flex-right {
+  width: 50%;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+#selos-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  display: none;
+}
+
+#selos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media (max-width: 1095px) {
   .d-flex-column {
     margin: 0 20px;
+  }
+
+  .row-footer {
+    display: block;
+    text-align: center;
   }
 
   .investimento-left {
@@ -660,6 +726,25 @@ hr {
 }
 
 @media (max-width: 490px) {
+  footer {
+    width: 90%;
+    margin: 10 auto;
+  }
+
+  .see-more{
+    display: block;
+  }
+
+  #selos-mobile{
+    display: block!important;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  #selos{
+    display: none!important;
+  }
+
   .tab button.active .arrow {
     border-width: 0 2px 2px 0;
     padding: 2px;
@@ -667,9 +752,6 @@ hr {
 
   .tab button {
     font-size: 9.5px
-  }
-  #selos{
-    display: none;
   }
 }
 
@@ -681,33 +763,4 @@ hr {
   .tab button {
     font-size: 9px;
   }
-}
-
-.margin-top-2{
-  margin-top: 2rem;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-left {
-  width: 50%;
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-
-.flex-right {
-  width: 50%;
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
 }

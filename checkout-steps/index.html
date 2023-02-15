@@ -12,6 +12,7 @@
         <section id="timer">
             <div class="row fixed-top d-inline-flex justify-content-center align-items-center oferta">
                 <div class="timer text-center">00:00:00</div>
+                <img class="mg-left-1" src="img/clock.png">
             </div>
         </section>
 
@@ -44,6 +45,7 @@
                                     </div> 
                                 </div>
                             </div>
+                            
                             <div class="mg-1">
                                 <div class="row justify-content-center">
                                     <h5 class="the-best-couse text-center"> O melhor curso de Perícia do Brasil</h5>
@@ -82,7 +84,7 @@
                                 <div class="row">
                                     <h3 class="this-couse-include text-center"> O que você precisa saber para inciar o curso:</h3>
                                 </div>  
-                                <div class="text-left">
+                                <div class="text-left mg-left-1">
 
                                     <div class="d-flex-center mb-1">
                                         <div>
@@ -115,6 +117,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="div2">                 
@@ -177,7 +180,12 @@
                                             <button class="button c-pointer" type="submit" value="Comprar Agora"> Comprar Agora</button>
 
                                             <div id="selos" class="margin-top-2">
-                                                <img src="img/grupo-selos.png">
+                                                <img src="img/grupo-selos.png" width="90%">
+                                            </div>
+                                            <div id="selos-mobile" class="text-center">
+                                                <img src="img/mob-compra.png">
+                                                <img src="img/mob-privacidade.png">
+                                                <img src="img/mob-garantia.png">
                                             </div>
                                         </div>
                                     </form>
@@ -196,24 +204,26 @@
                                                 </div> 
                                             </div>
                                
-                                                <div class="row row-pagamento">
-                                                    <div id="options" class="field-input d-flex">
-                                                        <input type="radio" id="credito" name="pagamento" value="1">
-                                                        <label for="credito">Cartão de cŕedito</label>
-                                                        <input type="radio" id="boleto" name="pagamento" value="2">
-                                                        <label for="boleto">Boleto</label>
+                                            <div class="row row-pagamento">
+                                                <div id="options" class="field-input d-flex">
+                                                    <input type="radio" id="credito" name="pagamento" value="1">
+                                                    <label for="credito">Cartão de cŕedito</label>
 
-                                                        <input type="radio" id="pix" name="pagamento" value="3">
-                                                        <label for="pix">PIX</label>
+                                                    <input type="radio" id="boleto" name="pagamento" value="2">
+                                                    <label for="boleto">Boleto</label>
 
-                                                        <input type="radio" id="vermais" name="pagamento" value="4">
-                                                        <label for="vermais">Ver mais</label>
-                                                    </div>
-                                                    <div>
-                                                        <p></p>
-                                                    </div>
+                                                    <input type="radio" id="pix" name="pagamento" value="3">
+                                                    <label for="pix">PIX</label>
+
+                                                    <input type="radio" id="vermais" name="pagamento" value="4">
+                                                    <label for="vermais">Ver mais</label>
                                                 </div>
-                                
+                                                <div>
+                                                    <p class="text-center see-more">
+                                                        Arraste para ver mais
+                                                    </p>
+                                                </div>
+                                            </div>
 
                                             <div class="field-input mb-1">
                                                 <label class="label" for="numero">Número do Cartão</label>
@@ -258,7 +268,12 @@
                                             <br>
                                             <button class="button c-pointer" type="submit" value="Comprar Agora"> Finalizar pagamento</button>
                                             <div id="selos" class="margin-top-2">
-                                                <img src="img/grupo-selos.png">
+                                                <img src="img/grupo-selos.png" width="90%">
+                                            </div>
+                                            <div id="selos-mobile" class="text-center">
+                                                <img src="img/mob-compra.png">
+                                                <img src="img/mob-privacidade.png">
+                                                <img src="img/mob-garantia.png">
                                             </div>
                                         </div>
                                     </form>
@@ -289,14 +304,20 @@
                                             <p class="text-step-three mb-1">Pagamento via cartão de crédito</p> <br>
 
                                             <div class="notice">
-                                                <p> Depois do Pagamento, fique atento ao seu e-mail para receber os dados de 
+                                                <p> 
+                                                    Depois do Pagamento, fique atento ao seu e-mail para receber os dados de 
                                                     acesso ao produto (Verifique também a caixa de SPAM)
                                                 </p> 
                                             </div>
                                             <br>
                                             <button class="button bt-blue c-pointer" type="submit" value="Comprar Agora"> Seu pedido foi processado com sucesso</button>
                                             <div id="selos" class="margin-top-2">
-                                                <img src="img/grupo-selos.png">
+                                                <img src="img/grupo-selos.png" width="90%">
+                                            </div>
+                                            <div id="selos-mobile" class="text-center">
+                                                <img src="img/mob-compra.png">
+                                                <img src="img/mob-privacidade.png">
+                                                <img src="img/mob-garantia.png">
                                             </div>
                                         </div>
                                     </form>
@@ -304,17 +325,29 @@
                             </div> 
                         </div> 
                     </div>
-                    <footer class="row row2">
-                        <ul id="footer" class="text-left">
-                            <li>
+                    <footer>
+                        <div id="footer" class="text-left">
+                            <div class="row-footer row2 ">
+                                <div class="md-col mb-1 mg-1">
                                     <p class="f-title">Satisfação garantida ou o seu dinheiro de volta</p>
-                                <p class="f-descricao">Garantia incondicional em até 7 dias você efetuar o <br> cancelamento e nós devolvemos 100% do valor pago.</p>
-                            </li>
-                            <li>
-                                <p class="f-title">Precisa de ajuda?</p>
-                                <p class="f-descricao">Vale com a gente via WhatsApp ou e-mail.<br> Nosso site utiliza cookies. Para saber mais, confira a nossa política de privacidade e ostermos de compra.</p>
-                            </li>
-                        </ul>
+                                    <p class="f-descricao">
+                                        Garantia incondicional em até 7 dias você efetuar o <br> 
+                                        cancelamento e nós devolvemos 100% do valor pago.
+                                    </p>
+                                </div>
+                                <div class="md-col mb-1 mg-1 ">
+                                    <p class="f-title">Precisa de ajuda?</p>
+                                    <p class="f-descricao">
+                                        Vale com a gente via WhatsApp ou e-mail.<br> 
+                                        Nosso site utiliza cookies. Para saber mais, confira a nossa 
+                                        política de privacidade e ostermos de compra.
+                                    </p>
+                                </div>
+                                <div class="md-col">
+                                    <img src="img/reclameaqui.png">
+                                </div>
+                            </div>
+                        </div>
                     </footer>
                 </div>
             </div>
