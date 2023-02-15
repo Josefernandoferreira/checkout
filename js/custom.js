@@ -1,5 +1,4 @@
 function openCity(evt, cityName) {
-	
   evt.preventDefault();
 
   var i, tabcontent, tablinks;
@@ -14,5 +13,16 @@ function openCity(evt, cityName) {
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-  
+  showImgStepOne();
+}
+
+function showImgStepOne() {
+  const btStepOne = document.getElementById("bt-step-one");
+  const imgStepOne = document.getElementById("img-step-one");
+
+  if (btStepOne.classList.contains("active")) {
+    imgStepOne.style.display = "flex";
+  } else {
+    imgStepOne.style.display = "none";
+  }
 }

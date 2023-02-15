@@ -149,9 +149,10 @@ body {
   overflow: hidden;
   border: 1px solid white;
   background-color: white;
-  border: 1px solid #ced4da;
+  border: 1px solid #cccccc;
   border-radius: 0.3rem;
-  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* Style the buttons inside the tab */
@@ -191,6 +192,8 @@ body {
 
 .form-checkout {
   margin-top: 2.2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .tab button.active #step {
@@ -203,7 +206,7 @@ body {
   color: #b1b9c1;
   padding: 0.5rem 0.7rem;
   border-radius: 0.2rem;
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .w-img-12 {
@@ -522,7 +525,7 @@ hr {
 
   .investimento-left {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -592,15 +595,37 @@ hr {
     gap: 0;
   }
 
+  .tab {
+    justify-content: space-around;
+    display: flow-root;
+  }
+
+  .tab button {
+    padding: 14px 0;
+  }
+
   #pagamento #options label {
     border-radius: 0;
   }
 }
 
+@media (max-width: 490px) {
+  .tab button.active .arrow {
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+  }
+
+  .tab button {
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 375px) {
-  .investimento-left {
-    font-size: 14px;
-    justify-content: center;
-    text-align: center;
+  #step {
+    padding: 0.3rem 0.5rem;
+    margin-right: 0.3rem;
+  }
+  .tab button {
+    font-size: 9px;
   }
 }
