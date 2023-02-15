@@ -1,5 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap");
 
+.w-img-12 {
+  width: 12rem;
+}
+
+.w-img-10 {
+  width: 10rem;
+}
+
+.w-img-7 {
+  width: 7rem;
+}
+
+.mg-1 {
+  margin: 1rem;
+}
+
+.mg-0 {
+  margin: 0;
+}
+
+.mg-0-3 {
+  margin: 0 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mg-right-1 {
+  margin-right: 1rem;
+}
+
+.mg-left-2 {
+  margin-left: 2rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.f-right {
+  float: right;
+}
+
+.d-block {
+  display: block;
+}
+
+#pagamento {
+  margin-top: -2.5rem;
+}
+
+.text-buy {
+  font-size: 11px;
+  color: #707780;
+}
+
+.text-left-buy {
+  text-align: end;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.text-step-three {
+  color: #282C2F;
+  font-weight: bold;
+}
+
 .some-page-wrapper {
   margin: 0px;
 }
@@ -8,11 +87,18 @@
   box-sizing: border-box;
 }
 
+.icon-li{
+  display: flex;
+  align-items: center;
+  margin-left: -2rem;
+}
+
 body {
   background-color: #111111;
   margin: 0;
   font-size: 1rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 400;
 }
 
@@ -144,7 +230,7 @@ body {
   padding: 1.2rem;
 }
 
-/*INICIO TABS*/
+
 .tab {
   overflow: hidden;
   border: 1px solid white;
@@ -152,10 +238,9 @@ body {
   border: 1px solid #cccccc;
   border-radius: 0.3rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
   border: none;
@@ -163,15 +248,16 @@ body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #cccccc;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   font-weight: bold;
+  color: #000;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   border: 1px solid w;
@@ -191,7 +277,6 @@ body {
 }
 
 .form-checkout {
-  margin-top: 2.2rem;
   display: flex;
   flex-direction: column;
 }
@@ -201,32 +286,16 @@ body {
   color: white;
 }
 
+#img-step-one{
+  margin-bottom: 2.5rem;
+}
+
 #step {
   background-color: #d1dce5;
   color: #b1b9c1;
-  padding: 0.5rem 0.7rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 0.2rem;
   margin-right: 0.5rem;
-}
-
-.w-img-12 {
-  width: 12rem;
-}
-
-.w-img-10 {
-  width: 10rem;
-}
-
-.w-img-7 {
-  width: 7rem;
-}
-
-.mg-1 {
-  margin: 1rem;
-}
-
-.mg-0 {
-  margin: 0;
 }
 
 .subtitle {
@@ -250,28 +319,14 @@ body {
   padding: 0.3rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.mg-left-2 {
-  margin-left: 2rem;
-}
-
-.d-flex {
-  display: flex;
-}
-
 #list-this-course {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
   list-style-type: none;
-  margin-left: -2rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 34px;
 }
 
 .this-couse-include ul {
@@ -285,6 +340,8 @@ p {
 
 .list-this-course {
   padding: 0.8rem 0;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 footer ul {
@@ -319,6 +376,7 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   background: white;
+  color: #939598;
 }
 
 input[type="submit"] {
@@ -337,10 +395,12 @@ input[type="submit"]:hover {
 }
 
 .label {
-  font-size: 14px;
   float: left;
   color: #282c2f;
   margin-bottom: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .mb-1 {
@@ -405,14 +465,14 @@ hr {
 
 .tab button.active .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 1px 1px 0;
   display: inline-block;
   padding: 3px;
 }
 
 .arrow {
   border: solid #ddd;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
 }
@@ -432,10 +492,10 @@ hr {
   padding: 12px 25px;
   background-color: white;
   color: #939598;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   width: 100%;
-  height: 73px;
+  height: 60px;
   margin: -0.4rem 1rem 1.2rem 0rem;
   border: 1px solid #939598;
   flex-direction: row;
@@ -443,6 +503,8 @@ hr {
   align-items: center;
   text-align: center;
   justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 #pagamento #options input[type="radio"]:checked + label {
@@ -450,6 +512,7 @@ hr {
   color: #375ec1;
   border: 1.6px solid #375ec1;
   font-weight: 700;
+  font-size: 13px;
 }
 
 .arrow-back {
@@ -479,43 +542,13 @@ hr {
   justify-content: center;
   font-weight: bold;
 }
-.c-pointer {
-  cursor: pointer;
-}
-
-.f-right {
-  float: right;
-}
-
-.d-block {
-  display: block;
-}
-
-#pagamento {
-  margin-top: -2.5rem;
-}
-
-.text-buy {
-  font-size: 11px;
-  color: #707780;
-}
-
-.text-left-buy {
-  text-align: end;
-}
-
-.d-flex-center {
-  overflow-x: hidden;
-}
 
 #step-one {
   display: block;
 }
 
 .row-pagamento {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
 }
 
 @media (max-width: 1095px) {
@@ -598,6 +631,7 @@ hr {
   .tab {
     justify-content: space-around;
     display: flow-root;
+    margin-bottom: 1rem;
   }
 
   .tab button {
@@ -616,7 +650,7 @@ hr {
   }
 
   .tab button {
-    font-size: 11px;
+    font-size: 9.5px
   }
 }
 
@@ -628,4 +662,8 @@ hr {
   .tab button {
     font-size: 9px;
   }
+}
+
+.margin-top-2{
+  margin-top: 2rem;
 }
