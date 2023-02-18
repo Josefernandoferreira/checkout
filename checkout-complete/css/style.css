@@ -252,13 +252,23 @@
 }
 
 .img-cartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   width: 284px;
+  gap: 10px;
   height: 182px;
+  padding: 0 0 25px 25px;
   margin-top: 50px;
   border-radius: 10px;
   background: linear-gradient(180deg, #484d54 0%, #6f767f 100%);
 }
 
+.cartao-estilo {
+  color: #a1a5a9;
+  font-weight: 800;
+  line-height: 22px;
+}
 .tipos-cartoes {
   display: flex;
   justify-content: space-evenly;
@@ -448,7 +458,6 @@ footer {
   margin: 2rem 0;
   font-weight: bold;
   font-size: 14px;
-  
 }
 
 .row-footer {
@@ -595,7 +604,7 @@ footer {
     width: auto;
   }
 
-  #selos{
+  #selos {
     display: none;
   }
 
