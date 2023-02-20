@@ -274,6 +274,11 @@
   justify-content: space-evenly;
 }
 
+.cartao-detalhes {
+  display: flex;
+  gap: 150px;
+}
+
 .tipos-cartoes p {
   margin-top: 15px;
   width: 45px;

@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/custom.js"></script>
         <link href='https://css.gg/arrow-left.css' rel='stylesheet'>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     </head>
 
     <body>
@@ -132,7 +136,7 @@
 
                                                 <div class="field-input">
                                                     <label class="label"for="titular">Nome do titular</label>
-                                                    <input type="text" id="titular" name="titular" placeholder="Digite o nome impresso no cartão">
+                                                    <input type="text" id="titular" maxlength="26" name="titular" placeholder="Digite o nome impresso no cartão">
                                                 </div>
 
                                                 <div class="field-input">
@@ -143,17 +147,17 @@
                                                 <div class="infos-cartao">
                                                     <div class="field-input">
                                                         <label class="label" for="mes">Mẽs</label>
-                                                        <input type="text" id="mes" name="mes" placeholder="Mês">
+                                                        <input type="text" id="mes" maxlength="2" name="mes" placeholder="Mês">
                                                     </div>
 
                                                     <div class="field-input">
                                                         <label class="label" for="ano">Ano</label>
-                                                        <input type="text" id="ano" name="ano" placeholder="Ano">
+                                                        <input type="text" id="ano" maxlength="2" name="ano" placeholder="Ano">
                                                     </div>
 
                                                     <div class="field-input">
                                                         <label class="label" for="cvv">CVV</label>
-                                                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                                                        <input type="text" id="cvv" maxlength="3" name="cvv" placeholder="CVV">
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,6 +167,18 @@
                                                     <div class="cartao-infos">
                                                         <p class="cartao-numero cartao-estilo">**** **** **** ****</p>
                                                         <p class="cartao-nome cartao-estilo">**** * * *****</p>
+                                                        <div class="cartao-detalhes">
+                                                            <div>
+                                                                <p class="cartao-data-title">val:</p>
+                                                                <p class="cartao-data cartao-estilo">
+                                                                    <span class="cartao-mes">00</span>/<span class="cartao-ano">00</span>
+                                                                </p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="cartao-cvv-title">cvv</p>
+                                                                <p class="cartao-cvv cartao-estilo">000</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="tipos-cartoes">
@@ -352,5 +368,6 @@
         </div>
         </section>
         <script src="./js/formularioDinamico.js"></script>
+        <script src="./js/telfone.js"></script>
     <body>
 </html> 
